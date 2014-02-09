@@ -8,7 +8,7 @@ dd  # => nil
 class A
 
   def show(a)
-    puts "this is value of a #{a}"  # => nil
+    puts " ia m in class A this is value of a #{a}"  # => nil
   end
 end
 
