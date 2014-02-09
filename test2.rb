@@ -1,11 +1,14 @@
 class Item
-  attr_reader :name, :quantity, :unit_price  # => nil
+  attr_reader :name, :quantity, :unit_price
   def initialize(attributes)
-    @name = attributes[:name]                # => "cake"
-    @quantity = attributes[:quantity]        # => "78"
-    @unit_price = attributes[:unit_price]    # => "4.50"
+    @name = attributes[:name]
+    @quantity = attributes[:quantity]
+    @unit_price = attributes[:unit_price]
   end
 end
 
-item = Item.new({name: "cake", quantity: "78", unit_price: "4.50"})  # => #<Item:0x007fa7b90942b0 @name="cake", @quantity="78", @unit_price="4.50">
+item = Item.new({name: "cake", quantity: "78", unit_price: "4.50"})
+
+# 2nd object
+item2 = Item.new({name: "butter", quantity: "7", unit_price: "2.0"})
 
